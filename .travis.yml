@@ -8,7 +8,6 @@ python:
 install:
   - pip install -r test-requirements.txt
 script: flake8 .
-- pypy
 deploy:
   provider: pypi
   user: allexx
