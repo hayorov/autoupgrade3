@@ -1,7 +1,7 @@
-autoupgrade
+autoupgrade3
 ===========
 
-Automatic upgrade of Python modules and packages
+Python 3 friendly automatic upgrade of Python modules and packages
 
 quick start
 -----------
@@ -9,7 +9,7 @@ quick start
 ::
 
     :::python
-    from autoupgrade import AutoUpgrade
+    from autoupgrade3 import AutoUpgrade
     AutoUpgrade("pip").upgrade_if_needed()
 
 The above will upgrade "pip" if there is a new version of pip out there.
@@ -20,13 +20,13 @@ installation
 
 ::
 
-    pip install autoupgrade
+    pip install autoupgrade3
 
 or install latest from repo:
 
 ::
 
-    pip install https://bitbucket.org/jorkar/autoupgrade/get/master.tar.gz
+    pip install https://bitbucket.org/jorkar/autoupgrade3/get/master.tar.gz
 
 api
 ---
@@ -88,13 +88,16 @@ restart, restart app if True dependencies, update dependencies if True
 Supported platforms
 -------------------
 
-Currently tested on Linux with Python 2.7. Should be usable on Windows
-and \*nix.
-
-Test for Python 3 will be done some time.
+Currently tested on Linux with Python 2.7/3.5. Should be usable on Windows and \*nix.
 
 Release notes
 -------------
+
+0.2.1
+~~~~~
+
+Forked from autoupgrade
+Python 3.5 support
 
 0.2.0
 ~~~~~
@@ -138,5 +141,5 @@ Initial release
 Info
 ====
 
--  Homepage: https://bitbucket.org/jorkar/autoupgrade
+-  Homepage: https://github.com/hayorov/autoupgrade3
 
