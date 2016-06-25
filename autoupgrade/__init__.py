@@ -1,4 +1,4 @@
-import urllib
+from six.moves.urllib import request as urllib
 from bs4 import BeautifulSoup
 import re
 import pkg_resources
@@ -59,7 +59,7 @@ class AutoUpgrade(object):
         """
         if self.check():
             if self.verbose:
-                print "Upgrading %s" % self.pkg
+                print("Upgrading %s" % self.pkg)
             self.upgrade(dependencies)
             if restart:
                 self.restart()
@@ -97,7 +97,7 @@ class AutoUpgrade(object):
             Does **not** return
         """
         if self.verbose:
-            print "Restarting " + executable + " " + str(argv) 
+            print("Restarting " + executable + " " + str(argv))
         execl(executable, *([executable]+argv))
         
     def check(self):

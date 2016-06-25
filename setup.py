@@ -5,7 +5,7 @@ from distutils.core import setup
 
 __version__ = "unknown"
 exec(open('autoupgrade/version.py').read())
-print "autoupgrade version: " + __version__
+print("autoupgrade version: " + __version__)
 
 setup(name='autoupgrade',
       version=__version__,
@@ -17,7 +17,8 @@ setup(name='autoupgrade',
       url = "https://bitbucket.org/jorkar/autoupgrade",
       install_requires = [
         "pip", 
-        "BeautifulSoup4"
+        "BeautifulSoup4",
+        "six"
         ],
       classifiers=[
         "Development Status :: 3 - Alpha",
