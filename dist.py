@@ -16,7 +16,7 @@ try:
 finally:
         f.close()
 
-os.system("rsync -rvp --delete --chmod=D+x,ugo+r dist/ backup@enduro_nas.local:/volume1/web/simple/autoupgrade/")
+os.system("rsync -rvp --delete --chmod=D+x,ugo+r dist/ backup@enduro_nas.local:/volume1/web/simple/autoupgrade3/")
 print "do a git commit , add tag and push!"
 # Note, manually add link to yab in http://enduro_nas.local/simple/index.html
 

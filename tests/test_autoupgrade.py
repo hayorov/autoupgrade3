@@ -1,16 +1,16 @@
 from unittest import TestCase
 
-from autoupgrade import normalize_version, AutoUpgrade
+from autoupgrade3 import normalize_version, AutoUpgrade
 #import sys
 
 
 #print sys.argv
-#autoupgrade.AutoUpgrade("x").restart()
+#autoupgrade3.AutoUpgrade("x").restart()
 
-#autoupgrade.AutoUpgrade("pip").upgrade_if_needed()
+#autoupgrade3.AutoUpgrade("pip").upgrade_if_needed()
 
-#autoupgrade.AutoUpgrade("alsdhf").upgrade()
-#autoupgrade.AutoUpgrade("pip").upgrade()
+#autoupgrade3.AutoUpgrade("alsdhf").upgrade()
+#autoupgrade3.AutoUpgrade("pip").upgrade()
 
 class TestFunctions(TestCase):
     
