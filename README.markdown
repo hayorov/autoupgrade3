@@ -2,6 +2,8 @@
 
 Python 3 friendly automatic upgrade of Python modules and packages
 
+[![Build Status](https://travis-ci.org/hayorov/autoupgrade3.svg?branch=master)](https://travis-ci.org/hayorov/autoupgrade3)
+
 ## quick start
 
 	:::python
