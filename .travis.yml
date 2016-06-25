@@ -1,0 +1,18 @@
+language: python
+branches:
+  only:
+    - master
+python:
+- "2.7"
+- "3.5"
+install:
+  - pip install -r test-requirements.txt
+script: flake8 .
+- pypy
+deploy:
+  provider: pypi
+  user: allexx
+  password:
+    secure: JI3oDmiWC32wSCN+Xj2UFiQcEP3ED71prjwhXsINhXmGxJYH3Q/wCNgx0BrzwH3EDpVkKxlekLDFVs8xJ7FZLgJHquhSjRAMHefFVs6y8vLy4gdLo5SKQ8ToR2yOzFueYqjbeybpmVC3sVZxov/nXsLQQxcOF0e2lqJgHizD5RtNl/B6Ti8bLVSae2pjotP++iMpaWEkXCBO0kAmNT2p0B3KHLQkNaqzmhIoV2hXUbJprX3sjPZbOXUTpK6+JrryOCiOiW14n/pp6nRy6ru+fQHsXSO2kt626WLAtvsqabmnI+lTbdCubGiBjB0Kodps8lPd+jhh4MVK7Fe20MXkVYABOuthHwzgOHZzwMQfPKQcicG2nlUct9cMFM+1Q6tQfUJQA5l6kO7GpdugOnKorjLb90hOKnscYIllUwK+iSvqP6DACUncXi0sBiJnrtXoEYoKU/64c/WdgNFAt4x96Svb4mMjXzWX7oRdiE9PS+YCd9mpKzgJlRiKb9qSt1W2LBBnW/cp5A35lOPKJewHDNRBwu1gTaaJX4ZYhgvmoK40IInTWdsDiSSoeIkoPp1wUhJFHq65tTnW4YeOUT5K7L7oHko/BQ4TciRJcmulTBGKyxuuXayoHrwLaSAQ82YSxlM0F2G9sEw0GVKcMmIUGAeqw/mM2h8yhGLiBSQHjOU=
+  on:
+    distributions: sdist bdist_wheel
